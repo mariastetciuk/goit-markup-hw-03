@@ -9,16 +9,28 @@
 --main-bacsground-color: #FFFFFF;
 --secondary-bacsground-color: #F5F4FA;
 --button-bacsground-color: #2196F3;
+--accent-bacsground-color: #188CE8;
 --footer-bacsground-color: #2F303A;
 
 }
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--main-bacsground-color);
-
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+
 }
 .link {
     text-decoration: none;
@@ -35,6 +47,15 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid green;
+}
+
 /* ----------------------HEADER------------------------------------ */
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -69,11 +90,20 @@ color: var(--accent-color);
 .header-link {
         color: var(--main-text-color);
 }
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /* -------------------HERO------------------- */
 
+
+
 .hero-title {
+    width: 696px;
+    height: 120px;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 40);
@@ -85,6 +115,10 @@ color: var(--accent-color);
 }
 
 .hero-button {
+    min-width: 216px;
+    min-height: 50px;
+    padding: 10px 32px;
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -97,12 +131,16 @@ color: var(--accent-color);
     background-color: var(--button-bacsground-color);
 }
 .hero-button:hover, .hero-button:focus {
-    text-decoration: underline ;
+    background-color: var(--accent-bacsground-color);
 }
 /* --------Наші переваги-------- */
 
 
+
+
 .advantages-title {
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -120,7 +158,9 @@ color: var(--accent-color);
 }
 
 /* --------Чим ми займаємося------ */
-.services-title {
+.services-title, .team-title {
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
@@ -134,16 +174,14 @@ color: var(--accent-color);
 .team-item {
     background-color: var(--main-bacsground-color);
 }
-.team-title {
-    font-size: 36px;
-    line-height: calc(42 / 36);
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-title-color);
+
+
+.img {
+    margin-bottom: 30px;
 }
-
-
 .team-worker {
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -162,14 +200,21 @@ color: var(--accent-color);
 }
 /* ------------------------------FOOTER------------------------ */
 .footer {
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--footer-bacsground-color);
 }
+
+   
 
 .logo-footer {
     color: var(--secondary-title-color);
 }
 
 .address {
+    margin-top: 20px;
     font-style: normal;
 }
 
@@ -185,6 +230,7 @@ color: var(--accent-color);
 }
 .address-contact {
     color: var(--contact-color);
+    margin-top: 9px;
 }
 .address-link:hover, .address-link:focus,
 .address-contact:hover,.address-contact:focus {
@@ -193,8 +239,13 @@ color: var(--accent-color);
 
 
 /* ==================================PORTFOLIO=============================================== */
-
+.filter-list {
+    margin-bottom: 34px;
+}
 .filter-button {
+    min-height: 38px;
+    padding: 6px 22px;
+    
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -213,7 +264,12 @@ color: var(--accent-color);
     background-color: var(--button-bacsground-color);
 
 }
+.img-portfolio {
+    margin-bottom: 20px;
+}
 .portfolio-title {
+    margin-bottom: 4px;
+   
     font-family: inherit;
     font-size: 18px;
     line-height: calc(36 / 18);
