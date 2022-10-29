@@ -79,7 +79,7 @@ img {
 
 /* ----------------------HEADER------------------------------------ */
 .header {
-    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 .container-header, .nav, .nav-list {
     display: flex;
