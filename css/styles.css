@@ -65,6 +65,10 @@ img {
     margin-right: auto;
     /* outline: 2px solid green; */
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* card-set */
 .card-set {
     display: flex;
@@ -91,7 +95,7 @@ img {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: calc(31 / 16);
+    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--logo-color);
 }
@@ -114,7 +118,7 @@ img {
     margin-right: 50px;
 }
 .nav-link, .header-link {
-    
+    display: inline-block;
 padding-top: 32px;
     padding-bottom: 32px;
 
@@ -141,10 +145,7 @@ padding-top: 32px;
 .header-link {
         color: var(--main-text-color);
 }
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 
 /* -------------------HERO------------------- */
 .hero {
@@ -223,6 +224,9 @@ padding-top: 32px;
 }
 
 /* --------Чим ми займаємося------ */
+.services {
+    padding-top: 0;
+}
 .services-title, .team-title {
     margin-bottom: 50px;
 
@@ -292,6 +296,7 @@ padding-top: 32px;
     color: var(--secondary-title-color);
 }
 .footer-logo {
+    display: inline-block;
     margin-bottom: 20px;
 }
 
@@ -299,7 +304,7 @@ padding-top: 32px;
     width: 231px;
     font-style: normal;
 }
-.address-list:not(:last-child) {
+.address-item:not(:last-child) {
 margin-bottom: 9px;
 }
 
